@@ -87,7 +87,7 @@ filterInput.addEventListener('input', function () {
   tryLoadTowns().then(() => showFilteredTowns(this.value));
 });
 
-async function tryLoadTowns() {
+function tryLoadTowns() {
   loadingBlock.classList.remove('hidden');
   loadingFailedBlock.classList.add('hidden');
   filterBlock.classList.add('hidden');
